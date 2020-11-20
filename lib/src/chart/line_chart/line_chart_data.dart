@@ -243,7 +243,7 @@ class LineChartBarData with EquatableMixin {
   ///
   /// You can have multiple lines by splitting them,
   /// put a [FlSpot.nullSpot] between each section.
-  final List<FlSpot> spots;
+  final List<dynamic> spots;
 
   /// Determines to show or hide the line.
   final bool show;
@@ -349,7 +349,7 @@ class LineChartBarData with EquatableMixin {
   /// If you want to have a Step Line Chart style, just set [isStepLineChart] true,
   /// also you can tweak the [LineChartBarData.lineChartStepData].
   LineChartBarData({
-    List<FlSpot> spots,
+    List<dynamic> spots,
     bool show,
     List<Color> colors,
     List<double> colorStops,
@@ -420,7 +420,7 @@ class LineChartBarData with EquatableMixin {
   /// Copies current [LineChartBarData] to a new [LineChartBarData],
   /// and replaces provided values.
   LineChartBarData copyWith({
-    List<FlSpot> spots,
+    List<dynamic> spots,
     bool show,
     List<Color> colors,
     List<double> colorStops,
